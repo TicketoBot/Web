@@ -17,6 +17,11 @@ h1 {
   text-align: center;
 }
 
+.logo {
+    height:40px;
+    width:auto;
+}
+
 .topbar {
     display: flex;
     align-items: center;
