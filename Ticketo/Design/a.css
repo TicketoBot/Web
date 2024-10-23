@@ -10,20 +10,26 @@
 body {
     background-color: #f0f0f0;
     color: #333;
-    transition: background-color 0.3s ease;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* allows footer to stay at the bottom */
+    min-height: 100vh;
 }
 
 header {
-    background: rgba(255, 215, 0, 0.8); /* semi-transparent background */
-    backdrop-filter: blur(10px); /* blur effect */
+    background: rgba(255, 215, 0, 0.8); /* Transparent yellow */
+    backdrop-filter: blur(10px);
     padding: 20px;
     text-align: center;
-    position: sticky; /* makes the header stick to the top */
-    top: 0; /* position it at the top */
-    z-index: 1000; /* ensures it is above other elements */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
 }
 
 nav ul {
@@ -39,62 +45,49 @@ nav ul li {
 nav a {
     text-decoration: none;
     color: #fff;
+    font-weight: 700;
     position: relative;
-    overflow: hidden;
-}
-
-nav a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to right, #FFD700, #DAA520);
-    transform: translateX(-100%);
-    transition: transform 0.4s ease;
-    z-index: 0;
-}
-
-nav a:hover::before {
-    transform: translateX(0);
+    padding: 10px 15px;
+    background-color: #B2C7A8; /* Sage green */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    color: #333;
-    z-index: 1;
+    background-color: #A8B9A0;
 }
 
 .home-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px 0; /* margin for spacing */
+    margin: 40px 0;
 }
 
 .home-header h2 {
-    font-size: 72px; /* size for the big header */
-    margin-right: 20px; /* space between text and logo */
+    font-size: 72px;
+    margin-right: 20px;
+    color: #333;
 }
 
 .logo {
-    max-width: 200px; /* adjust size as needed */
-    height: auto; /* maintains aspect ratio */
+    max-width: 200px;
+    height: auto;
 }
 
 main {
-    flex: 1; /* allows main content to grow */
+    flex: 1;
     padding: 40px;
     text-align: center;
 }
 
 .cta-button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 15px 30px;
+    font-size: 18px;
     background-color: #FFD700;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s ease;
 }
 
@@ -107,16 +100,7 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+    position: relative;
+    bottom: 0;
     width: 100%;
-}
-
-nav a {
-    padding: 10px 15px; /* adds space around the link text */
-    border-radius: 50%; /* 100% roundness */
-    background-color: #B2C7A8; /* sage green */
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #A8B9A0; /* darker sage green on hover */
 }
