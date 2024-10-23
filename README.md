@@ -1,4 +1,4 @@
-# <img src="/Ticketo/Design/ProfilePictureTransparent.png" width="20px" height=auto> Ticketo
+# <img src="/Ticketo/Design/ProfilePictureTransparent.png" width="25px" height=auto> Ticketo
 Ticketo is a totally free tickets bot for your Discord server.
 
 Someone having problems connecting to your website(s)? Ticketo is there for you.
