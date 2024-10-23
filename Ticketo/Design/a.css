@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,9 @@ body {
     background-color: #f0f0f0;
     color: #333;
     transition: background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* allows footer to stay at the bottom */
 }
 
 header {
@@ -61,7 +65,25 @@ nav a:hover {
     z-index: 1;
 }
 
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0; /* margin for spacing */
+}
+
+.home-header h2 {
+    font-size: 72px; /* size for the big header */
+    margin-right: 20px; /* space between text and logo */
+}
+
+.logo {
+    max-width: 200px; /* adjust size as needed */
+    height: auto; /* maintains aspect ratio */
+}
+
 main {
+    flex: 1; /* allows main content to grow */
     padding: 40px;
     text-align: center;
 }
@@ -85,7 +107,16 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
-    position: relative;
-    bottom: 0;
     width: 100%;
+}
+
+nav a {
+    padding: 10px 15px; /* adds space around the link text */
+    border-radius: 50%; /* 100% roundness */
+    background-color: #B2C7A8; /* sage green */
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #A8B9A0; /* darker sage green on hover */
 }
