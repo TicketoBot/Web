@@ -35,8 +35,8 @@ h1 {
     backdrop-filter: blur(10px); /* Blurs the background */
     color: #fff;
     border-radius: 25px;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Moves to center */
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center;     /* Vertically centers the content */
 }
 
 .topbar .logo a {
