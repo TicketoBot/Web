@@ -35,7 +35,6 @@ h1 {
     backdrop-filter: blur(10px); /* Blurs the background */
     color: #fff;
     border-radius: 25px;
-    display: grid;
     place-items: center;
 }
 
